@@ -45,6 +45,7 @@ class(vector2a)
 
 # 2f)
 vector2ad <- c(vector2a, vector2d)
+class(vector2ad)
 
 # 2g)
 sqrt(vector2a)
@@ -58,3 +59,12 @@ matrix3b <- matrix(c(1:100), nrow = 10, ncol = 10, byrow = TRUE)
 # 3c)
 matrix3a[,5]
 matrix3b[5,]
+
+# 3d)
+matrix3a_into_3b <- t(matrix3b)
+
+# 3e)
+colnames(matrix3a) <- LETTERS[1:10]
+
+# 3f)
+rownames(matrix3a) <- paste("measurement", 1:10)
